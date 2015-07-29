@@ -13,13 +13,9 @@ public class PieChartData {
 
 	private static List<KeyValue> data;
 
-	public static List<KeyValue> getPieDataList() {
+	public static List<KeyValue> getPieDataList(Date from, Date to) {
 		data = new ArrayList<PieChartData.KeyValue>();
-		Calendar calendar = Calendar.getInstance();
-		java.sql.Date to = new java.sql.Date(calendar.getTime().getTime());
-		calendar.setTime(to);
-		calendar.add(Calendar.DATE, -30);
-		java.sql.Date from = new java.sql.Date(calendar.getTime().getTime());
+		
 
 		List<Estado> estados = new ArrayList<Estado>();
 		estados = getTimeFromStatus(from, to);

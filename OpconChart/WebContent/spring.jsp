@@ -44,9 +44,20 @@
     }
 </script>
 </head>
+
+
 <body>
+
+<form action='' method='get'>
+From: <input type="text" name="from"><br>
+To: <input type="text" name="to"><br>
+ <input type="submit"/>
+ </form>
+ 
+
 	<div style="width: 600px;">
 		<div id="chart_div"></div>
 	</div>
+	
 </body>
 </html>
